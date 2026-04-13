@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: abc-tours-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: abc-tours
+  template:
+    metadata:
+      labels:
+        app: abc-tours
+    spec:
+      containers:
+      - name: abc-tours-container
+        image: abc-tours-site:latest
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: abc-tours-service
+spec:
+  type: NodePort
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 30001
+  selector:
+    app: abc-tours
