@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ABC Tours & Travels | Explore the World</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; line-height: 1.6; color: #333; }
+        header { background: #2c3e50; color: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; }
+        nav a { color: white; margin-left: 20px; text-decoration: none; font-weight: bold; }
+        .hero { background: #3498db; color: white; padding: 60px 5%; text-align: center; }
+        section { padding: 40px 5%; }
+        .dest-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { border: 1px solid #ddd; padding: 20px; border-radius: 8px; transition: 0.3s; }
+        .card:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .price { color: #27ae60; font-weight: bold; font-size: 1.2rem; }
+        footer { background: #2c3e50; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ABC Tours & Travels</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#packages">Packages</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <h2>Your Journey Begins Here</h2>
+    <p>Discover breathtaking places at unbeatable prices.</p>
+</section>
+
+<section id="destinations">
+    <h2>Popular Destinations</h2>
+    
+    <h3>Beaches</h3>
+    <div class="dest-grid">
+        <div class="card">
+            <h4>Maldives</h4>
+            <p>Crystal clear waters and luxury overwater villas.</p>
+            <ul>
+                <li>Scuba Diving</li>
+                <li>Sunset Cruises</li>
+            </ul>
+            <p class="price">Starting at $1,200</p>
+        </div>
+    </div>
+
+    <h3>Hill Stations</h3>
+    <div class="dest-grid">
+        <div class="card">
+            <h4>Swiss Alps</h4>
+            <p>Majestic snow-capped peaks and world-class skiing.</p>
+            <ul>
+                <li>Cable Car Rides</li>
+                <li>Alpine Skiing</li>
+            </ul>
+            <p class="price">Starting at $1,800</p>
+        </div>
+    </div>
+</section>
+
+<section id="packages" style="background:#f4f4f4;">
+    <h2>Special Offers</h2>
+    <p><strong>Summer Bonanza:</strong> Book any beach destination and get 20% off on water sports!</p>
+    <p><strong>Honeymoon Special:</strong> Complimentary dinner and spa for couples.</p>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>ABC Tours & Travels has been a leader in the travel industry for over 15 years, providing seamless travel experiences across 50+ countries.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 Phone: +1 234 567 890</p>
+    <p>📧 Email: info@abctours.com</p>
+    <p>📍 Address: 123 Travel Lane, Adventure City</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 ABC Tours & Travels. Follow us on Instagram | Facebook | Twitter</p>
+</footer>
+
+</body>
+</html>
