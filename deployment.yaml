@@ -15,6 +15,7 @@ spec:
       containers:
       - name: abc-tours-container
         image: abc-tours-site:latest
+        imagePullPolicy: Never # <--- ADD THIS LINE
         ports:
         - containerPort: 80
 ---
